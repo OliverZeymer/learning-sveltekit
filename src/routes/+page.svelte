@@ -1,4 +1,5 @@
 <script>
+  import Title from "$lib/title.svelte";
   import { onMount } from "svelte";
 
   let title = 1
@@ -9,8 +10,6 @@
     console.log('mounted')
   })
 </script>
-
-
 
 <div class="index">
   <h2>{title}</h2>

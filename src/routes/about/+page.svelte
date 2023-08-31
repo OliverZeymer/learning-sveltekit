@@ -1,3 +1,6 @@
+<script>
+  import Title from "$lib/title.svelte";
+</script>
 <div class="about">
   <h2>About Us</h2>
   <p>
