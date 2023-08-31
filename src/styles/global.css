@@ -7,3 +7,12 @@ body {
   font-family: "VT323", monospace;
   font-weight: normal;
 }
+
+a {
+  text-decoration: none;
+  color: #decff1;
+}
+
+li {
+  list-style: none;
+}

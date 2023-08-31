@@ -1,14 +1,8 @@
 <script>
-  import Title from "$lib/title.svelte";
-  import { onMount } from "svelte";
-
   let title = 1
   function updateTitle () {
     title = title + 1
   }
-  onMount(() => {
-    console.log('mounted')
-  })
 </script>
 
 <div class="index">
@@ -17,8 +11,6 @@
   <button on:click={updateTitle}>count up</button>
   <input type="text" bind:value={title} />
 </div>
-<a href="/guides">View Guides</a>
-<a href="/about">About</a>
 
 <style>
   .index {

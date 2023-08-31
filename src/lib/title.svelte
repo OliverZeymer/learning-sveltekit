@@ -2,10 +2,12 @@
   export let title = "Learning SvelteKit"
 </script>
 
-<div class="title">
-  <img src="/game-controller.svg" width="60" alt="site logo">
-  <h1>{title}</h1>
-</div>
+<a href="/" class="title">
+
+    <img src="/game-controller.svg" width="60" alt="site logo">
+    <h1>{title}</h1>
+
+</a>
 
 <style>
   .title {
