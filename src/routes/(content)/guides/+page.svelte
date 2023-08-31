@@ -1,17 +1,21 @@
+<script>
+  export let data
+  $: ({posts} = data)
+</script>
+
 <div class="guides">
   <ul>
-    <li>
-      <a href="/">guide 1</a>
-    </li>
-    <li>
-      <a href="/">guide 2</a>
-    </li>
+    {#each posts as post}
+      <li>
+        <a href='/'>{post.title}</a>
+      </li>
+    {/each}
   </ul>
 </div>
 
 <style>
   .guides {
-    margin-top: 20px auto;
+    margin-top: 20px;
   }
   ul {
     list-style-type: none;
@@ -21,6 +25,6 @@
     display: inline-block;
     margin-top: 10px;
     padding: 10px;
-    border: 1px dotted #222
-    }
+    border: 1px dotted rgba(255,255,255,0.2);
+  }
 </style>

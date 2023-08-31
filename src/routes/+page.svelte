@@ -4,7 +4,10 @@
     title = title + 1
   }
 </script>
-
+<svelte:head>
+  <title>Learning SvelteKit</title>
+ 
+</svelte:head>
 <div class="index">
   <h2>{title}</h2>
   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem debitis quas praesentium quam animi, magnam rerum aut. Dolor, maxime? Ducimus fugit ipsum neque hic optio inventore magnam quidem consequuntur nobis.</p>
